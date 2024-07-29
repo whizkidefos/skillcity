@@ -1,11 +1,116 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | NodeJS</title>
-</head>
-<body>
-    <h1>Node JS - Contact us</h1>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Node JS demo | Contact</title>
+    <link rel="shortcut icon" href="../images/node-logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="./app.css">
+    <link rel="stylesheet" href="../burger.css">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-secondary">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                NodeJS Demo
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+              </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/services">Services</a>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact">Contact</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+
+      <section class="banner">
+        <div class="container banner-content">
+            <h1>Contact | Node JS</h1>
+            <h3>Get in touch</h3>
+            <br><br>
+            <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-8 position-relative">
+                  <label for="validationTooltip01" class="form-label">First name</label>
+                  <input type="text" class="form-control" id="validationTooltip01" required>
+                  <div class="valid-tooltip">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-8 position-relative">
+                  <label for="validationTooltip02" class="form-label">Last name</label>
+                  <input type="text" class="form-control" id="validationTooltip02" required>
+                  <div class="valid-tooltip">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-8 position-relative">
+                  <label for="validationTooltipUsername" class="form-label">Email</label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                    <input type="email" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
+                    <div class="invalid-tooltip">
+                      Please choose a unique and valid email.
+                    </div>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-md-8 position-relative">
+                  <label for="validationTooltip04" class="form-label">Purpose of contact</label>
+                  <select class="form-select" id="validationTooltip04" required>
+                    <option selected disabled value="">Select from list</option>
+                    <option>I need a software development service</option>
+                    <option>A client briefing</option>
+                    <option>To arrange a call</option>
+                    <option>I feel like chatting</option>
+                  </select>
+                  <div class="invalid-tooltip">
+                    Please select a valid title.
+                  </div>
+                </div>
+                <div class="col-md-8 position-relative">
+                  <label for="validationTooltip05" class="form-label">Phone Number</label>
+                  <input type="number" class="form-control" id="validationTooltip05" required>
+                  <div class="invalid-tooltip">
+                    Please provide a valid phone number.
+                  </div>
+                </div>
+                <div class="col-md-8 position-relative">
+                  <label for="validationTooltip03" class="form-label">Message</label>
+                  <div class="input-group">
+                    <span class="input-group-text">Message</span>
+                    <textarea class="form-control" aria-label="With textarea" id="validationTooltip03" required cols="80"></textarea>
+                  </div>
+                  <div class="invalid-tooltip">
+                    Please provide a valid message.
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-success" type="submit">Submit form</button>
+                </div>
+              </form>
+        </div>
+      </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="app.js"></script>
+  </body>
 </html>
